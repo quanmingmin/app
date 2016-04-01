@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>HelloWorld</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.0.min.css" type="text/css"
+			charset="utf-8">
+            <link rel="stylesheet" href="css/jquery.mobile.theme-1.0.min.css" type="text/css"
+			charset="utf-8">
+		<script type="text/javascript" charset="utf-8" src="js/phonegap.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>		
+		<script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.0a4.1.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				//为按钮ClickMe添加点击事件
+				$('#ClickMe').tap(function(){alert('HelloWorld!');});
+			}); 
+		</script>
+	</head>
+
+	<body>
+		<div data-theme="b" data-role="page" id="main">
+			<div data-role="header" >
+				<h1>
+					HelloWorld
+				</h1>
+			</div>
+			<!-- /header -->
+
+			<div data-role="content" >
+				<p>
+					这是我第一个PhoneGap+JqueryMobile结合的android程序
+				</p>
+				<p>					
+					<a href="#" id="ClickMe" data-role="button" data-inline="true" class="Bsimhei">点我</a>
+				</p>
+			</div>
+			<!-- /content -->
+
+			<div data-role="footer" >
+				<h4>
+					这个是页脚
+				</h4>
+			</div>
+			<!-- /header -->
+		</div>
+	</body>
+</html>
